@@ -1,5 +1,5 @@
 import { type Metadata } from 'next'
-import { ClerkProvider } from '@clerk/nextjs'
+
 import { Tajawal } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
