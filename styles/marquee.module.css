@@ -1,0 +1,38 @@
+/* src/styles/marquee.module.css */
+
+.marqueeContainer {
+  overflow: hidden;
+  white-space: nowrap; /* يمنع نزول العناصر لسطر جديد */
+  position: relative;
+  width: 100%;
+}
+
+.marqueeContent {
+  display: inline-block; /* يجعل المحتوى كله في سطر واحد */
+  animation: marquee-left 60s linear infinite; /* سرعة ومدة الحركة لليسار */
+  padding-right: 20px; /* مسافة بين نهاية المحتوى وبدايته لتجنب الفراغ */
+}
+
+.marqueeContent.right {
+  animation: marquee-right 60s linear infinite; /* سرعة ومدة الحركة لليمين */
+  padding-left: 20px;
+}
+
+.marqueeContent:hover {
+  animation-play-state: paused; /* إيقاف الحركة عند الـ Hover */
+}
+
+@keyframes marquee-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); } /* تحريك 100% من عرض المحتوى */
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-100%); } /* نبدأ من أقصى اليمين لنتجنب الفراغ */
+  100% { transform: translateX(0%); } /* تحريك لليمين */
+}
+
+/* عشان نكرر المحتوى بسلاسة، لازم نكرره مرتين */
+.marqueeContent > * {
+  display: inline-block;
+}

@@ -1,0 +1,66 @@
+# هيكل ملفات المشروع
+
+- الملفات الجذرية: components.json, eslint.config.mjs, middleware.ts, next-env.d.ts, next.config.ts, package.json, postcss.config.mjs, README.md, tsconfig.json
+
+- المجلدات والملفات:
+  - app/
+    - globals.css
+    - layout.tsx
+    - (admin)/
+      - layout.tsx
+      - dashboard/
+        - page.tsx
+      - login/
+        - page.tsx
+      - meals/
+        - page.tsx
+        - [id]/
+          - page.tsx
+      - orders/
+        - page.tsx
+    - (public)/
+      - layout.tsx
+      - page.tsx
+      - about/
+        - page.tsx
+      - cart/
+        - page.tsx
+      - checkout/
+        - page.tsx
+      - contact/
+        - page.tsx
+      - menu/
+        - page.tsx
+        - [id]/
+          - page.tsx
+    - sign-in/
+      - [[...sign-in]]/
+        - page.tsx
+    - sign-up/
+      - [[...sign-up]]/
+        - page.tsx
+  - components/
+    - AddToCartButton.tsx
+    - dashboard-sidebar.tsx
+    - meal-marquee.tsx
+    - navbar.tsx
+    - theme-provider.tsx
+    - theme-toggle.tsx
+  - constants/
+    - index.ts
+  - context/
+    - CartContext.tsx
+  - hooks/
+    - useCart.ts
+  - lib/
+    - supabase.ts
+    - utils.ts
+  - public/  (مجلد عام للموارد الثابتة)
+  - styles/
+    - marquee.module.css
+  - types/
+    - index.ts
+
+---
+
+تم إنشاء هذا الملف تلقائيًا لعرض هيكل المشروع. يمكنك طلب اسم ملف مختلف أو تنسيق إضافي (مثلاً شجرة ملفية مفصّلة أو JSON).
