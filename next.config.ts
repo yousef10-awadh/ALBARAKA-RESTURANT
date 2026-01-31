@@ -4,9 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'ypbckxbgbxronbnotsvy.supabase.co', // استبدل your-project-id بمعرف مشروعك
-        port: '',
-        pathname: '/storage/v1/object/public/**',
+        hostname: '**.supabase.co', // إذا كانت الصور في سوبا بيس
       },
     ],
   },
