@@ -41,6 +41,3 @@ export interface Meal {
   created_at?: string;
 }
 
-export interface CartItem extends Meal {
-  quantity: number;
-}
