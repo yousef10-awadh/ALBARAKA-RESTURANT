@@ -85,7 +85,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           
           <div className="flex-shrink-0 flex items-center gap-2">
-            <div className="w-10 h-10 bg-yellow-500 rounded-xl flex items-center justify-center text-black font-black text-xl">B</div>
+            <div className="w-10 h-10 bg-yellow-500 rounded-xl flex items-center justify-center text-black font-black text-4xl">B</div>
             <Link href="/" className="text-2xl font-black text-white tracking-tighter italic">البركة<span className="text-yellow-500">.</span></Link>
           </div>
 
