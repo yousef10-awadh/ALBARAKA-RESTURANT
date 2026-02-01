@@ -118,7 +118,7 @@ export default function AdminDashboard() {
           <p className="text-gray-500 mt-2 font-medium">نظرة عامة على أداء مطعم البركة اليوم</p>
         </div>
         <Link 
-          href="/dashboard/meals/new" // تأكد من المسار حسب مجلداتك داخل (admin)
+          href="/dashboard/meals" // تأكد من المسار حسب مجلداتك داخل (admin)
           className="bg-yellow-500 text-black px-8 py-4 rounded-2xl font-black flex items-center gap-2 hover:bg-yellow-400 transition-all shadow-xl shadow-yellow-500/10 active:scale-95"
         >
           <Plus size={20} strokeWidth={3} /> إضافة وجبة
